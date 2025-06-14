@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="?attr/colorSurface">
+
+    <!-- ✅ Circular Profile Image -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/akmal"
+        android:contentDescription="Profile Photo"
+        android:scaleType="centerCrop"
+        app:cornerFamily="rounded"
+        app:cornerSize="50%"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="2dp" />
+
+    <!-- Info Text -->
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here is some information about this app or feature."
+        android:textSize="18sp"
+        android:textColor="?attr/colorOnSurface"
+        android:lineSpacingExtra="4dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Clickable Link styled as a button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit GitHub Page"
+        android:textAllCaps="false"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textColor="?attr/colorPrimary"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp" />
+</LinearLayout>

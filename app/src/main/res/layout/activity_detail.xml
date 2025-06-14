@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:padding="16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="?attr/colorOutline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Month: January"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:paddingBottom="12dp" />
+
+            <TextView
+                android:id="@+id/textUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Units Used: 250"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textRebate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rebate: 5%"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Charges: RM 75.00"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Final Cost: RM 71.25"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingBottom="8dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>
